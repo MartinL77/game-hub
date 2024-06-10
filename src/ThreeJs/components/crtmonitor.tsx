@@ -29,7 +29,7 @@ type GLTFResult = GLTF & {
 };
 
 export default function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/assets/threejs/crtmonitor/crtmonitor.gltf') as GLTFResult;
+  const { nodes, materials } = useGLTF('game-hub/public/assets/threejs/crtmonitor/crtmonitor.gltf') as GLTFResult;
 
   return (
     <group {...props} dispose={null}>
@@ -57,4 +57,4 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
 }
 
 // Preload the GLTF file
-useGLTF.preload('/assets/threejs/crtmonitor/crtmonitor.gltf');
+useGLTF.preload('game-hub/publicassets/threejs/crtmonitor/crtmonitor.gltf');
