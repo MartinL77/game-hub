@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { useGLTF } from '@react-three/drei';
+import { useGLTF, Html } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
 
 type GLTFResult = GLTF & {
@@ -46,6 +46,9 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
             <mesh geometry={nodes.Cylinder003_Material002_0.geometry} material={materials['Material.002']} />
             <mesh geometry={nodes.Cylinder003_Material007_0.geometry} material={materials['Material.007']} />
             <mesh geometry={nodes.Cylinder003_Material001_0.geometry} material={materials['Material.001']} />
+            <Html position={[0, 1, 0]} center>
+              <iframe src="https://martinl77.github.io/" frameBorder="0" height={500} width={500}></iframe>
+            </Html>
           </group>
         </group>
       </group>
