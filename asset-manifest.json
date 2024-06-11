@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/game-hub/static/js/main.4fabcf7b.js",
+    "main.js": "/game-hub/static/js/main.4f7ba4c0.js",
     "index.html": "/game-hub/index.html",
-    "main.4fabcf7b.js.map": "/game-hub/static/js/main.4fabcf7b.js.map"
+    "main.4f7ba4c0.js.map": "/game-hub/static/js/main.4f7ba4c0.js.map"
   },
   "entrypoints": [
-    "static/js/main.4fabcf7b.js"
+    "static/js/main.4f7ba4c0.js"
   ]
 }
