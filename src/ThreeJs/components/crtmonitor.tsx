@@ -28,8 +28,8 @@ type GLTFResult = GLTF & {
   // animations: GLTFAction[]
 };
 
-export default function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('public/assets/threejs/crtmonitor/crtmonitor.gltf') as GLTFResult;
+export default function Crtmonitor(props: JSX.IntrinsicElements['group']) {
+  const { nodes, materials } = useGLTF(`${process.env.PUBLIC_URL}/assets/threejs/crtmonitor/crtmonitor.gltf`) as GLTFResult;
 
   return (
     <group {...props} dispose={null}>

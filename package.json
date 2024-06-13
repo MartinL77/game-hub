@@ -1,5 +1,5 @@
 {
-  "homepage": "http://martinl77.github.io/game-hub",
+  "homepage": "https://martinl77.github.io/game-hub",
   "name": "game-hub",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +14,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "gh-pages": "^6.1.1",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-dom": "^18.2.0",
     "react-frame-component": "^5.2.7",
     "react-scripts": "5.0.1",
