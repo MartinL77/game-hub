@@ -46,12 +46,12 @@ function crtMonitorView() {
                         config={{mass: 2, tension: 400}}
                         snap={{mass: 3, tension: 400}}
                     >
-                        <Float rotationIntensity={0.01} >
+                        {/* <Float rotationIntensity={0.01} > */}
                             {/* <Crtmonitor position={[0,0, 3.5]} /> */}
                             <Crtmonitor position={[0, -0.05, 4]} />
                             {/* <Crtmonitor position-y={-1.2} /> */}
                             {/* <Crtmonitor></Crtmonitor> */}
-                        </Float>
+                        {/* </Float> */}
                     </PresentationControls>
 
                     <ContactShadows 

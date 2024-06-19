@@ -11,3 +11,10 @@ width: 100%;
     }
 `
 
+export const StyledHtmlWrapper = styled.div`
+    & .htmlScreen iframe {
+        width: 1024px;
+        height: 670px;
+    }
+`
+

@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { useGLTF, Html } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
+import { StyledHtmlWrapper } from '../../styles/experience.styled';
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -46,9 +47,16 @@ export default function Crtmonitor(props: JSX.IntrinsicElements['group']) {
             <mesh geometry={nodes.Cylinder003_Material002_0.geometry} material={materials['Material.002']} />
             <mesh geometry={nodes.Cylinder003_Material007_0.geometry} material={materials['Material.007']} />
             <mesh geometry={nodes.Cylinder003_Material001_0.geometry} material={materials['Material.001']} />
-            <Html position={[0, 1, 0]} center>
+            <StyledHtmlWrapper>
+            <Html 
+            transform
+            wrapperClass='htmlScreen'
+            // position={[33, 36, 0]} 
+            // center
+            >
               <iframe src="https://martinl77.github.io/" frameBorder="0" height={500} width={500}></iframe>
             </Html>
+            </StyledHtmlWrapper>
           </group>
         </group>
       </group>
@@ -57,4 +65,4 @@ export default function Crtmonitor(props: JSX.IntrinsicElements['group']) {
 }
 
 // Preload the GLTF file
-useGLTF.preload('public/assets/threejs/crtmonitor/crtmonitor.gltf');
+useGLTF.preload(`${process.env.PUBLIC_URL}/assets/threejs/crtmonitor/crtmonitor.gltf`);
